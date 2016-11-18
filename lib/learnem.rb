@@ -4,7 +4,7 @@ require 'json'
 
 module Learnem
   class Flashem < Thor
-    DATA_PATH = Dir.pwd + "/lib/learnem/data/data.json"
+    DATA_PATH = File.expand_path(File.join(File.dirname(__FILE__), "/learnem/data/data.json"))
 
     desc "flashem", 'Flash cards on your command line.'
     option :begin, :aliases => "-b"
