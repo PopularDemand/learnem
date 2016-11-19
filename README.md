@@ -1,38 +1,58 @@
 # Learnem
+Let's get dangerous.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/learnem`. To experiment with that code, run `bin/console` for an interactive prompt.
+***
 
-TODO: Delete this and the text above, and describe your gem
+This gem has come preloaded with minimal Flashcards and Quotes to get you started. Enjoy!
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'learnem'
+Install this gem via command line:
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install learnem
-
+  $ gem install learnem
+ ```
 ## Usage
 
-TODO: Write usage instructions here
+####To see all options:
+```
+  $ learnem
+```
+####To begin a flashcard session:
+```
+  $ learnem flashem [FLAG]
+```
+The possible flags are `-b` for begin or `-a` to add a new card. You *must* use one.
 
+#### To see a nice quote:
+```
+  $ learnem quotem [FLAG]
+```
+The possible flags are `-r` to read one or `-a` to add a new quote. You *must* use one.
+
+#### To quickly open Ruby Docs:
+```
+  $ learnem docs [CLASS] [METHOD]
+```
+Class and method are required. Currently only supports Ruby 2.3.1 documentation.
+
+#### To view the main menu:
+```
+  $ learnem main_menu
+```
+
+#### In app help:
+```
+  $learnem [COMMAND] --help
+```
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repo, run `bundle install` to install dependencies.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/learnem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/PopularDemand/learnem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

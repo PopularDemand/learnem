@@ -26,6 +26,12 @@ module Learnem
     desc "quotem [FLAG]", "A nice sentiment for your day. -r to read, -a to add"
     option :read, :aliases => '-r'
     option :add, :aliases => '-a'
+    long_desc <<-LONGDESC
+      `quotem --read` will begin show a quote
+      \x5`quotem --add` will prompt you for new quotation information
+    
+      > $ quotem [FLAG]
+    LONGDESC
     def quotes
       quotes = JSON.parse(File.read(DATA_PATH))["quotes"]
       if options[:read]
