@@ -50,8 +50,8 @@ module Learnem
       say("Enter an option:")
       say("Begin flashem (b)\nAdd a flashcard (a)\nRead a quote (r)\nNew quote (n)\nGet docs (d)\nQuit (q)")
       input = ask("> ")
-      unless ['b', 'a', 'q', 'n', 'r'].include?(input)
-        say("Please enter a valid option: b, a, r, n, or q. Nothing fancy.")
+      unless ['b', 'a', 'q', 'd', 'n', 'r'].include?(input)
+        say("Please enter a valid option: b, a, r, n, d, or q. Nothing fancy.")
         main_menu
       end
       case input
@@ -143,7 +143,7 @@ module Learnem
         main_menu
       end
       obj = obj.capitalize
-      url = "https://ruby-doc.org/core-2.2.0/#{obj}.html#method-i-#{method}"
+      url = "https://ruby-doc.org/core-2.3.1/#{obj}.html#method-i-#{method}"
       `sensible-browser #{url} 2> /dev/null`
       `open #{url} 2> /dev/null`
     end
