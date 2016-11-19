@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Command line utility that enhances learning experience.}
   spec.description   = %q{This currently supports flashcards, doc lookup, and simple quotations to get you through the day.}
-  spec.homepage      = "https://github.com/PopularDemand/learnem."
+  spec.homepage      = "https://github.com/PopularDemand/learnem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
