@@ -32,7 +32,7 @@ module Learnem
     
       > $ quotem [FLAG]
     LONGDESC
-    def quotes
+    def quotem
       quotes = JSON.parse(File.read(DATA_PATH))["quotes"]
       if options[:read]
         show_quote(quotes)
@@ -149,6 +149,7 @@ module Learnem
         main_menu
       end
       obj = obj.capitalize
+      method = "#{method[0..-2]}-21" if method.end_with?('!')
       url = "https://ruby-doc.org/core-2.3.1/#{obj}.html#method-i-#{method}"
       `sensible-browser #{url} 2> /dev/null`
       `open #{url} 2> /dev/null`
