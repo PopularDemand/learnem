@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["alexa.anderson@outlook.com"]
 
   spec.summary       = %q{Command line utility that enhances learning experience.}
-  spec.description   = %q{This currently supports flashcards and simple quotations to get you through the day.}
+  spec.description   = %q{This currently supports flashcards, doc lookup, and simple quotations to get you through the day.}
   spec.homepage      = "https://github.com/PopularDemand/learnem."
   spec.license       = "MIT"
 
